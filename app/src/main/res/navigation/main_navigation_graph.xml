@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation_graph"
+    app:startDestination="@id/splashFragment"
+    >
+
+    <fragment
+        android:id="@+id/captchPhotoFragment"
+        android:name="com.ahmednafe3.photoweather.moduls.capture.view.CapturePhotoFragment"
+        android:label="fragment_captch_photo"
+        tools:layout="@layout/fragment_captch_photo" />
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.ahmednafe3.photoweather.moduls.splach.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.ahmednafe3.photoweather.moduls.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/photoListFragment"
+        android:name="com.ahmednafe3.photoweather.moduls.gallery.view.PhotoListFragment"
+        android:label="fragment_photo_list"
+        tools:layout="@layout/fragment_photo_list" />
+    <fragment
+        android:id="@+id/photoDetailFragment"
+        android:name="com.ahmednafe3.photoweather.moduls.gallery.view.PhotoDetailFragment"
+        android:label="fragment_photo_detail"
+        tools:layout="@layout/fragment_photo_detail" />
+    <fragment
+        android:id="@+id/camerxFragment"
+        android:name="com.ahmednafe3.photoweather.moduls.capture.view.CamerxFragment"
+        android:label="fragment_camerx"
+        tools:layout="@layout/fragment_camerx" />
+</navigation>

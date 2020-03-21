@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PhotoWeather</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="OPEN_WEATHER_MAP_API_KEY">93f632c9a7e0d61c366b2f7458daa352</string>
+</resources>
