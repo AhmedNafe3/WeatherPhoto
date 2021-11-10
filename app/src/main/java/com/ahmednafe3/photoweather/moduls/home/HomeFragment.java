@@ -27,9 +27,6 @@ import java.util.List;
 
 import static com.ahmednafe3.photoweather.utils.CommonUtil.showPermissionSettingsDialog;
 
-/**
- * A simple {@link Fragment} subclass.
- */
 public class HomeFragment extends BaseFragment {
     private boolean isGranted = false;
     private FragmentHomeBinding binding;
@@ -45,6 +42,7 @@ public class HomeFragment extends BaseFragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_home, container, false);
         binding = DataBindingUtil.bind(v);
+        setUp(binding.getRoot());
         binding.captureButton.setOnClickListener(v1 -> showCaptureScreen(v1));
 
         binding.galleryButton.setOnClickListener(v2 -> showPhotosScreen(v2));
@@ -84,7 +82,7 @@ public class HomeFragment extends BaseFragment {
             Navigation.findNavController(v).navigate(R.id.photoListFragment);
     }
 
-    @Override
+
     protected void setUp(View view) {
         model = new ViewModelProvider(getActivity()).get(HomeViewModel.class);
         model.callData();

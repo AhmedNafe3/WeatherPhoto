@@ -18,9 +18,6 @@ import com.ahmednafe3.photoweather.base.view.BaseFragment;
 import com.ahmednafe3.photoweather.databinding.FragmentPhotoDetailBinding;
 import com.ahmednafe3.photoweather.utils.CommonUtil;
 
-/**
- * A simple {@link Fragment} subclass.
- */
 public class PhotoDetailFragment extends BaseFragment {
     FragmentPhotoDetailBinding binding;
     String imgPath;

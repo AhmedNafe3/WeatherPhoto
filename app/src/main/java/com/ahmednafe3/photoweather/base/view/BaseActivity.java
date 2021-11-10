@@ -15,7 +15,6 @@ public abstract class BaseActivity extends AppCompatActivity implements BaseView
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setUp();
     }
 
     @Override
@@ -69,7 +68,5 @@ public abstract class BaseActivity extends AppCompatActivity implements BaseView
     public void hideKeyboard() {
 
     }
-
-    protected abstract void setUp();
 
 }

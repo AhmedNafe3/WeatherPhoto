@@ -1,7 +1,8 @@
-package com.ahmednafe3.photoweather;
+package com.ahmednafe3.photoweather.moduls;
 
 import android.os.Bundle;
 
+import com.ahmednafe3.photoweather.R;
 import com.ahmednafe3.photoweather.base.view.BaseActivity;
 
 public class MainActivity extends BaseActivity {
@@ -12,8 +13,4 @@ public class MainActivity extends BaseActivity {
         setContentView(R.layout.activity_main);
     }
 
-    @Override
-    protected void setUp() {
-
-    }
 }
